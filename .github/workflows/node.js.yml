@@ -20,8 +20,8 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_KEY }}
           script: |
-            cd your-node-app || git clone https://github.com/<your-username>/<your-repo>.git your-node-app
-            cd your-node-app
+            cd node-application || git clone https://github.com/agarwalpunkit/node-application.git node-application
+            cd node-application
             git pull origin main
             npm install
             pm2 restart all || pm2 start server.js
