@@ -21,6 +21,7 @@ export const addContacts = async (req,res) => {
 export const getContacts = async (req, res) => {
     try {
         const contacts = await Contacts.find();
+        console.log("Get Contacts:", contacts);
         res.json(contacts);
     } catch (err) {
         throw new Error('Fetching Contacts Failed'); 
