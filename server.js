@@ -6,7 +6,8 @@ const app = express();
 const PORT = 3000;
 
 console.log("Fake commit");
-const connection = mongoose.connect('mongodb://localhost:27017/test');
+
+const connection = mongoose.connect('mongodb+srv://test:test123@cluster0.ijb5aob.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
 
 app.use(bodyParser.json())
 app.use('/contacts',contactsRouter);
