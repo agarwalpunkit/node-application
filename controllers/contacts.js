@@ -3,7 +3,7 @@ import { Contacts } from "../models/contacts.js";
 export const addContacts = async (req,res) => {
     const { body } = req;
     const { name, email, phone } = body;
-
+    console.log('Adding Contact:', body);
     try {
         const query = {
             name,
