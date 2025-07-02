@@ -5,7 +5,7 @@ import contactsRouter from './routes/contacts.js';
 const app = express();
 const PORT = 3000;
 
-
+console.log("Fake commit");
 const connection = mongoose.connect('mongodb://localhost:27017/test');
 
 app.use(bodyParser.json())
