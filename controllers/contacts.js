@@ -14,7 +14,7 @@ export const addContacts = async (req,res) => {
         console.log('Contact Added');
         res.json({status: 200, message: 'Contact Added'});
     } catch (err) {
-        throw new Error('Contacts Addition failed');
+        throw new Error(`Adding Contact Failed: ${err.message}`);
     }
 }
 
