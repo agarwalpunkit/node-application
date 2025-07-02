@@ -24,4 +24,4 @@ jobs:
             cd your-node-app
             git pull origin main
             npm install
-            pm2 restart all || pm2 start index.js
+            pm2 restart all || pm2 start server.js
